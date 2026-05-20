@@ -16,7 +16,7 @@ export function Navbar() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#0D0D0D]/95 backdrop-blur-md border-b border-[#242424]' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img src={LOGO_URL} alt="СТАТУСЪ" className="h-16 w-auto" />
+          <img src={LOGO_URL} alt="СТАТУСЪ" className="h-24 w-auto" />
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map(link => (
