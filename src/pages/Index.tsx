@@ -54,11 +54,8 @@ function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#0D0D0D]/95 backdrop-blur-md border-b border-[#242424]' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
-          <div className="w-8 h-8 border border-[#C9A84C] flex items-center justify-center">
-            <span className="text-[#C9A84C] font-display text-sm font-bold">B</span>
-          </div>
-          <span className="font-display text-xl tracking-[0.2em] text-white uppercase">BLADE</span>
+        <a href="#" className="flex items-center">
+          <img src="https://cdn.poehali.dev/projects/c387cc5d-f908-4659-8e46-f1976b7da6bc/bucket/c583d16f-63fd-40ce-94bf-b49bfd894bbc.PNG" alt="СТАТУСЪ" className="h-10 w-auto" />
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map(link => (
@@ -104,9 +101,9 @@ function Hero() {
             <div className="w-8 h-[1px] bg-[#C9A84C]" />
             <span className="font-body text-[#C9A84C] text-xs tracking-[0.3em] uppercase">Премиум барбершоп · Москва</span>
           </div>
-          <h1 className="font-display text-[72px] md:text-[110px] leading-none uppercase text-white mb-4 opacity-0 animate-fade-in-up delay-200">
-            BLADE
-          </h1>
+          <div className="mb-6 opacity-0 animate-fade-in-up delay-200">
+            <img src="https://cdn.poehali.dev/projects/c387cc5d-f908-4659-8e46-f1976b7da6bc/bucket/c583d16f-63fd-40ce-94bf-b49bfd894bbc.PNG" alt="СТАТУСЪ" className="h-24 md:h-36 w-auto" />
+          </div>
           <p className="font-serif-it text-2xl md:text-3xl text-[#C9A84C]/80 italic mb-6 opacity-0 animate-fade-in-up delay-300">
             Стиль, который говорит за тебя
           </p>
@@ -547,13 +544,8 @@ function Footer() {
   return (
     <footer className="bg-[#0D0D0D] border-t border-[#242424] py-10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 border border-[#C9A84C]/40 flex items-center justify-center">
-            <span className="text-[#C9A84C] font-display text-sm font-bold">B</span>
-          </div>
-          <span className="font-display text-lg tracking-[0.2em] text-white uppercase">BLADE</span>
-        </div>
-        <div className="font-body text-[#EDE8DC]/30 text-xs">© 2024 BLADE Barbershop. Все права защищены.</div>
+        <img src="https://cdn.poehali.dev/projects/c387cc5d-f908-4659-8e46-f1976b7da6bc/bucket/c583d16f-63fd-40ce-94bf-b49bfd894bbc.PNG" alt="СТАТУСЪ" className="h-8 w-auto opacity-60" />
+        <div className="font-body text-[#EDE8DC]/30 text-xs">© 2024 СТАТУСЪ Барбершоп. Все права защищены.</div>
         <div className="flex gap-6 flex-wrap justify-center">
           {NAV_LINKS.map(link => (
             <a key={link.href} href={link.href} className="font-body text-[#EDE8DC]/30 text-xs uppercase tracking-widest hover:text-[#C9A84C] transition-colors">
